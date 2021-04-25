@@ -1,6 +1,6 @@
 using System;
 
-namespace petgram
+namespace PetGramApi
 {
     public class WeatherForecast
     {
