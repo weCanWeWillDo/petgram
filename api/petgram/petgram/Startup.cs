@@ -24,12 +24,14 @@ namespace petgram
         {
             public string TransformOutbound(object value)
             {
+                // Slugify value
                 var str = value?.ToString();
                 return str == null
                     ? null
-                    : Regex.Replace(str, "([a-z])([A-Z])", "$1_$2").ToLower();
-                // Slugify value
+                    : WordEdgeRegex.Replace(str, "$1_$2").ToLower();
             }
+
+            private Regex WordEdgeRegex { get; } = new Regex("([a-z])([A-Z])");
         }
     }
     
