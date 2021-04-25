@@ -21,6 +21,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore api/petgram
     - name: Build
-      run: dotnet build --no-restore api/petgram/petgram
+      run: dotnet build --no-restore api/petgram
     - name: Test
-      run: dotnet test --no-build --verbosity normal api/petgram/PetGramTests
+      run: dotnet test --no-build --verbosity normal api/petgram
