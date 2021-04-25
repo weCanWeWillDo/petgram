@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace petgram.Controllers
+namespace PetGramApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
